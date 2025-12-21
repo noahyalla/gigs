@@ -68,7 +68,7 @@ fetch('data/projects.json')
                         <a href="${project.link}" 
                            class="btn btn-${colorClass} btn-lg w-100 fw-bold d-flex align-items-center justify-content-center"
                            target="_blank">
-                            <i class="fas fa-external-link-alt me-2"></i>View Project Details
+                            <i class="fas fa-briefcase me-2"></i>Follow Gig
                         </a>
                     </div>
                 </div>
