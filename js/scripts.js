@@ -31,9 +31,6 @@ fetch('data/projects.json')
                                     <i class="fas fa-layer-group me-1"></i>${project.technologies.length} technologies
                                 </p>
                             </div>
-                            <div class="project-icon">
-                                <i class="fas fa-mobile-alt fa-2x opacity-50"></i>
-                            </div>
                         </div>
                     </div>
                     
@@ -53,7 +50,7 @@ fetch('data/projects.json')
                         <!-- Technologies Section -->
                         <div class="mb-4">
                             <h6 class="fw-bold text-muted mb-3 border-bottom pb-2">
-                                <i class="fas fa-tools me-2"></i>Technologies Used
+                                <i class="fas fa-tools me-2"></i>Technology
                             </h6>
                             <div class="d-flex flex-wrap gap-2">
                                 ${project.technologies.map(tech => 
@@ -67,7 +64,8 @@ fetch('data/projects.json')
                     <div class="card-footer bg-transparent border-top-0 pt-0 pb-4 px-4">
                         <a href="${project.link}" 
                            class="btn btn-${colorClass} btn-lg w-100 fw-bold d-flex align-items-center justify-content-center"
-                           target="_blank">
+                           target="_blank"
+                           rel="noopener noreferrer">
                             <i class="fas fa-briefcase me-2"></i>Follow Gig
                         </a>
                     </div>

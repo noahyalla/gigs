@@ -2,7 +2,7 @@
     {
         "name": "OdiL QR Payment",
         "description": "Payment system integrated with BSP Pay",
-        "technologies": ["Mobile Development", "API Integration", "Headless CMS", "IoT Integration"],
+        "technologies": ["Mobile App Development", "API Integration", "Headless CMS", "IoT Integration", "QR Code", "Payment Gateway", "Encryption"],
         "link": "https://www.facebook.com/profile.php?id=61581131526732",
         "image": "assets/images/project1-screenshot.png"
     }
