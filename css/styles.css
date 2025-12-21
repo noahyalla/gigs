@@ -1,61 +1,338 @@
+:root {
+    --primary-gradient: linear-gradient(135deg, #0d6efd 0%, #198754 50%, #20c997 100%);
+    --shadow-light: 0 5px 15px rgba(0, 0, 0, 0.08);
+    --shadow-medium: 0 10px 30px rgba(0, 0, 0, 0.15);
+    --shadow-heavy: 0 15px 40px rgba(0, 0, 0, 0.2);
+    --transition: all 0.3s ease;
+}
+
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding-top: 76px; /* For fixed navbar */
 }
 
-/* Hero Section Gradient Background */
-#hero {
-    background: linear-gradient(135deg, #0d6efd 0%, #198754 50%, #20c997 100%); /* Blue to Green to Teal – professional tech vibe */
-    min-height: 80vh; /* Taller hero for impact */
-    display: flex;
-    align-items: center;
+/* Fixed Navbar */
+header {
+    backdrop-filter: blur(10px);
+    background-color: rgba(33, 37, 41, 0.95) !important;
 }
 
-.hero-background {
+.nav-link {
+    transition: var(--transition);
+    position: relative;
+}
+
+.nav-link:hover {
+    color: #20c997 !important;
+    transform: translateY(-2px);
+}
+
+.nav-link::after {
+    content: '';
     position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: inherit;
-    filter: blur(8px); /* Optional subtle blur for depth */
-    z-index: 0;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: #20c997;
+    transition: width 0.3s ease;
 }
 
-/* Profile Image – Perfect circle with border and shadow */
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    min-height: auto;
+    padding: 80px 0;
+}
+
+.profile-card {
+    background: white;
+    border: 1px solid rgba(0,0,0,0.1);
+    transition: var(--transition);
+}
+
+.profile-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-heavy);
+}
+
+/* Profile Image */
 .profile-container {
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
     margin: 0 auto;
+    position: relative;
 }
 
 .profile-img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures image fills circle without distortion */
-    border-radius: 50%; /* Perfect circle */
-    border: 6px solid rgba(255, 255, 255, 0.8); /* Clean white border */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Professional depth */
-    transition: transform 0.3s ease;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid white;
+    box-shadow: var(--shadow-medium);
+    transition: var(--transition);
 }
 
 .profile-img:hover {
-    transform: scale(1.05); /* Subtle hover zoom */
+    transform: scale(1.05);
+    border-color: #0d6efd;
 }
 
-/* Text shadow for readability on gradient */
-.text-shadow {
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+/* Gradient Text */
+.gradient-text {
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 800;
 }
 
-/* Mobile adjustments */
+/* Stats Box */
+.stat-box {
+    padding: 10px;
+    transition: var(--transition);
+}
+
+.stat-box:hover {
+    transform: translateY(-5px);
+}
+
+.stat-box h3 {
+    font-size: 1.8rem;
+}
+
+/* Social Icons */
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #f8f9fa;
+    color: #495057;
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    transform: translateY(-5px);
+    color: white;
+}
+
+.social-icon:nth-child(1):hover { background: #0077b5; } /* LinkedIn */
+.social-icon:nth-child(2):hover { background: #333; }   /* GitHub */
+.social-icon:nth-child(3):hover { background: #ea4335; } /* Email */
+
+/* About Content */
+.about-content {
+    background: white;
+    border-left: 5px solid #0d6efd;
+}
+
+.section-title {
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 4px;
+    background: var(--primary-gradient);
+    border-radius: 2px;
+}
+
+/* Expertise Cards */
+.expertise-card {
+    background: white;
+    border: 1px solid rgba(0,0,0,0.05);
+    transition: var(--transition);
+}
+
+.expertise-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-medium);
+    border-color: #0d6efd;
+}
+
+/* Project Card Improvements */
+.gig-card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 16px !important;
+}
+
+.gig-card:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
+}
+
+.gig-card .card-header {
+    border-radius: 16px 16px 0 0 !important;
+    border: none;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.gig-card .card-title {
+    font-size: 1.25rem;
+    line-height: 1.3;
+}
+
+.gig-card .card-subtitle {
+    font-size: 0.9rem;
+}
+
+.gig-card .project-icon {
+    opacity: 0.8;
+    transition: transform 0.3s ease;
+}
+
+.gig-card:hover .project-icon {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.gig-card .project-image {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gig-card:hover .project-image {
+    transform: scale(1.02);
+}
+
+.gig-card .badge {
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+.gig-card .badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gig-card .btn-lg {
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.gig-card .btn-lg:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensure text visibility */
+.gig-card .text-dark {
+    color: #212529 !important;
+}
+
+.gig-card .text-muted {
+    color: #6c757d !important;
+}
+
+/* Responsive adjustments for cards */
 @media (max-width: 768px) {
+    .gig-card .card-header {
+        min-height: 90px;
+        padding: 20px !important;
+    }
+    
+    .gig-card .card-title {
+        font-size: 1.1rem;
+    }
+    
+    .gig-card .project-image {
+        height: 150px !important;
+    }
+    
+    .gig-card .badge {
+        font-size: 0.85rem;
+        padding: 6px 12px;
+    }
+}
+
+/* Contact Section */
+.contact-icon {
+    transition: var(--transition);
+}
+
+.contact-icon:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.contact-form-card {
+    background: white;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .profile-container {
+        width: 180px;
+        height: 180px;
+    }
+    
+    #hero {
+        padding: 60px 0;
+    }
+    
+    .about-content {
+        padding: 30px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 68px;
+    }
+    
     .profile-container {
         width: 150px;
         height: 150px;
     }
     
-    #hero h1 {
-        font-size: 2.5rem;
+    .stat-box h3 {
+        font-size: 1.5rem;
     }
     
-    .navbar-nav {
-        text-align: center;
+    .section-title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .expertise-card {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .profile-card, .about-content {
+        padding: 20px !important;
+    }
+    
+    .tagline h4 {
+        font-size: 1.1rem;
+    }
+    
+    .social-icon {
+        width: 45px;
+        height: 45px;
     }
 }

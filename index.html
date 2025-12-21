@@ -5,70 +5,250 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noah's Gigs</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="assets/icons/favicon.ico">
 </head>
 <body>
-    <header class="bg-dark text-white py-4">
+    <header class="bg-dark text-white py-3 fixed-top shadow-lg">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" href="#">Noah Yalla</a>
+                <a class="navbar-brand fw-bold fs-4" href="#">
+                    <i class="fas fa-code me-2"></i>Noah Yalla
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects">Gigs</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#hero"><i class="fas fa-home me-1"></i>Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects"><i class="fas fa-briefcase me-1"></i>Gigs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact"><i class="fas fa-envelope me-1"></i>Contact</a></li>
                     </ul>
                 </div>
             </nav>
         </div>
     </header>
 
-<section id="hero" class="text-white py-5 text-center position-relative overflow-hidden">
-    <div class="hero-background"></div> <!-- Gradient overlay -->
-    <div class="container position-relative">
-        <div class="profile-container mx-auto mb-4">
-            <img src="assets/images/profile.png" alt="Profile" class="profile-img shadow-lg">
-        </div>
-        <h1 class="display-4 fw-bold text-shadow">Noah</h1>
-        <p class="lead text-shadow">Digital Innovation</p>
-    </div>
-</section>
-
-    <section id="about" class="py-5">
+    <!-- Hero & About Combined Section -->
+    <section id="hero" class="pt-5 mt-5">
         <div class="container">
-            <h2>About Me</h2>
-            <p>👨‍💻 <b>Full-Stack Developer | Project Manager | Innovation Strategist </b><br><br>
-📱 Mobile: Android Developer with a focus on Fintech & QR ecosystems. <br>
-
-🌐 Web: Expert in API-driven architectures and Headless CMS. <br>
-
-⚙️ Process: Certified in ITIL and Asset Management; Alignment of business tools with key business processes to achieve strategic goals.</p>
+            <div class="row align-items-center">
+                <!-- Profile Column -->
+                <div class="col-lg-4 col-md-5 mb-5 mb-md-0">
+                    <div class="profile-card text-center p-4 rounded-4 shadow-lg">
+                        <div class="profile-container mx-auto mb-4">
+                            <img src="assets/images/profile.png" alt="Noah Yalla" class="profile-img">
+                        </div>
+                        <h1 class="fw-bold mb-2 gradient-text">Noah Yalla</h1>
+                        <p class="lead text-muted mb-4">Digital Innovation Specialist</p>
+                        
+                        <!-- Quick Stats -->
+                        <div class="row text-center mb-4">
+                            <div class="col-4">
+                                <div class="stat-box">
+                                    <h3 class="fw-bold text-primary">5+</h3>
+                                    <p class="small mb-0">Years Exp</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-box">
+                                    <h3 class="fw-bold text-success">50+</h3>
+                                    <p class="small mb-0">Projects</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-box">
+                                    <h3 class="fw-bold text-info">100%</h3>
+                                    <p class="small mb-0">Client Sat.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Social Links -->
+                        <div class="social-links d-flex justify-content-center gap-3">
+                            <a href="https://www.linkedin.com/in/noah-yalla-348325103/" class="social-icon" target="_blank">
+                                <i class="fab fa-linkedin fa-lg"></i>
+                            </a>
+                            <a href="https://github.com/noahyalla" class="social-icon" target="_blank">
+                                <i class="fab fa-github fa-lg"></i>
+                            </a>
+                            <a href="mailto:noahyalla@gmail.com" class="social-icon">
+                                <i class="fas fa-envelope fa-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- About Me Column -->
+                <div class="col-lg-8 col-md-7">
+                    <div class="about-content p-4 p-lg-5 rounded-4 shadow-sm">
+                        <h2 class="fw-bold mb-4 section-title">About Me</h2>
+                        
+                        <!-- Tagline -->
+                        <div class="tagline mb-4 p-3 bg-primary bg-opacity-10 rounded-3">
+                            <h4 class="mb-0">
+                                <i class="fas fa-code me-2"></i>
+                                Full-Stack Developer | Project Manager | Innovation Strategist
+                            </h4>
+                        </div>
+                        
+                        <!-- Expertise Cards -->
+                        <div class="row mb-4">
+                            <div class="col-md-4 mb-3">
+                                <div class="expertise-card h-100 p-3 rounded-3 shadow-sm">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <i class="fas fa-mobile-alt text-primary fa-2x me-3"></i>
+                                        <h5 class="mb-0">Mobile Development</h5>
+                                    </div>
+                                    <p class="mb-0 small">Android specialist with focus on Fintech & QR ecosystems. Building secure, scalable mobile solutions.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="expertise-card h-100 p-3 rounded-3 shadow-sm">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <i class="fas fa-globe text-success fa-2x me-3"></i>
+                                        <h5 class="mb-0">Web Architecture</h5>
+                                    </div>
+                                    <p class="mb-0 small">Expert in API-driven architectures and Headless CMS. Creating seamless digital experiences.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="expertise-card h-100 p-3 rounded-3 shadow-sm">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <i class="fas fa-cogs text-info fa-2x me-3"></i>
+                                        <h5 class="mb-0">Process Optimization</h5>
+                                    </div>
+                                    <p class="mb-0 small">ITIL & Asset Management certified. Aligning business tools with processes to achieve strategic goals.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Additional Info -->
+                        <div class="additional-info p-3 bg-light rounded-3">
+                            <h5 class="fw-bold mb-3"><i class="fas fa-rocket me-2"></i>What I Bring to Your Project</h5>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>End-to-end project delivery</li>
+                                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>API integration expertise</li>
+                                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Cross-platform solutions</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Strategic innovation planning</li>
+                                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Quality assurance focus</li>
+                                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Timely delivery commitment</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="projects" class="bg-light py-5">
+    <!-- Gigs/Projects Section -->
+    <section id="projects" class="py-5 bg-light">
         <div class="container">
-            <h2>Gigs</h2>
-            <div class="row" id="project-cards"></div>
+            <div class="text-center mb-5">
+                <h2 class="fw-bold section-title">Featured Gigs</h2>
+                <p class="lead text-muted">Selected projects showcasing my expertise in digital solutions</p>
+            </div>
+            <div class="row" id="project-cards">
+                <!-- Projects will be loaded here via JavaScript -->
+            </div>
         </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact" class="py-5">
         <div class="container">
-            <h2>Contact</h2>
-            <p>Email: noahyalla@gmail.com</p>
-            <p>LinkedIn: https://www.linkedin.com/in/noah-yalla-348325103/</p>
-            <p>GitHub: https://github.com/noahyalla</p>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <h2 class="fw-bold mb-4 section-title">Let's Connect</h2>
+                    <p class="lead mb-4">Have a project in mind? Let's discuss how we can bring your digital vision to life.</p>
+                    
+                    <div class="contact-info">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="contact-icon rounded-circle bg-primary bg-opacity-10 p-3 me-3">
+                                <i class="fas fa-envelope text-primary fa-lg"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-0">Email</h5>
+                                <a href="mailto:noahyalla@gmail.com" class="text-decoration-none">noahyalla@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="contact-icon rounded-circle bg-success bg-opacity-10 p-3 me-3">
+                                <i class="fab fa-linkedin text-success fa-lg"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-0">LinkedIn</h5>
+                                <a href="https://www.linkedin.com/in/noah-yalla-348325103/" target="_blank" class="text-decoration-none">Connect professionally</a>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex align-items-center">
+                            <div class="contact-icon rounded-circle bg-dark bg-opacity-10 p-3 me-3">
+                                <i class="fab fa-github text-dark fa-lg"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-0">GitHub</h5>
+                                <a href="https://github.com/noahyalla" target="_blank" class="text-decoration-none">View my code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="contact-form-card p-4 p-lg-5 rounded-4 shadow-lg">
+                        <h4 class="fw-bold mb-4">Ready to Start Your Project?</h4>
+                        <div class="mb-3">
+                            <label class="form-label">Services Interested In</label>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-primary p-2">Mobile Development</span>
+                                <span class="badge bg-success p-2">Web Solutions</span>
+                                <span class="badge bg-info p-2">API Integration</span>
+                                <span class="badge bg-warning p-2">Project Consultation</span>
+                            </div>
+                        </div>
+                        <p class="text-muted">Send me an email at <strong>noahyalla@gmail.com</strong> with your project details, and I'll get back to you within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer class="bg-dark text-white py-3 text-center">
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
         <div class="container">
-            <p>&copy; 2025 Noah Yalla. All rights reserved.</p>
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <h5 class="fw-bold">Noah Yalla</h5>
+                    <p class="mb-0 text-light opacity-75">Turning digital visions into reality through innovative solutions.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/noah-yalla-348325103/" class="text-white me-3" target="_blank">
+                            <i class="fab fa-linkedin fa-lg"></i>
+                        </a>
+                        <a href="https://github.com/noahyalla" class="text-white me-3" target="_blank">
+                            <i class="fab fa-github fa-lg"></i>
+                        </a>
+                        <a href="mailto:noahyalla@gmail.com" class="text-white">
+                            <i class="fas fa-envelope fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-3 opacity-25">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 Noah Yalla. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
