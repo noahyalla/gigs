@@ -12,7 +12,7 @@ fetch('data/projects.json')
                         <h5 class="card-title">${project.name}</h5>
                         <p class="card-text">${project.description}</p>
                         <p><strong>Technologies:</strong> ${project.technologies.join(', ')}</p>
-                        <a href="${project.link}" class="btn btn-primary" target="_blank">View Project</a>
+                        <a href="${project.link}" class="btn btn-primary" target="_blank">Follow Gig</a>
                     </div>
                 </div>
             `;
