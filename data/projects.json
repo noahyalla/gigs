@@ -1,0 +1,9 @@
+[
+    {
+        "name": "OdiL QR Payment",
+        "description": "Payment system integrated with BSP Pay",
+        "technologies": ["Mobile Development", "API Integration", "Headless CMS", "IoT Integration"],
+        "link": "https://odil.space",
+        "image": "assets/images/project1-screenshot.png"
+    }
+]
