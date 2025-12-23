@@ -2,8 +2,15 @@
     {
         "name": "OdiL QR Payment",
         "description": "Payment system integrated with BSP Pay",
-        "technologies": ["Mobile App Development", "API Integration", "Headless CMS", "IoT Integration", "QR Code", "Payment Gateway", "Encryption"],
+        "technologies": ["Mobile App Development", "API Integration", "Headless CMS", "Multi-merchant", "Role Based Access", "Encryption", "QR Code"],
         "link": "https://www.facebook.com/profile.php?id=61581131526732",
         "image": "assets/images/project1-screenshot.png"
+    },
+    {
+        "name": "VEND 675",
+        "description": "Vending machine integration with OdiL QR Payment",
+        "technologies": ["Mobile App Development", "API Integration", "Headless CMS", "IoT Integration", "QR Code", "Payment Gateway"],
+        "link": "#",
+        "image": "assets/images/project2-screenshot.png"
     }
 ]
