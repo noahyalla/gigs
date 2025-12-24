@@ -7,7 +7,7 @@
         "image": "assets/images/project1-screenshot.png"
     },
     {
-        "name": "VEND 675",
+        "name":"2-4-MAKET",
         "description": "Vending machine integration with OdiL QR Payment",
         "technologies": ["Mobile App Development", "API Integration", "Headless CMS", "IoT Integration", "QR Code", "Payment Gateway"],
         "link": "#",
