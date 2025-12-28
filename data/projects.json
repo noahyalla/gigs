@@ -2,14 +2,14 @@
     {
         "name": "OdiL QR Payment",
         "description": "Payment system integrated with BSP Pay",
-        "technologies": ["Mobile App Development", "API Integration", "Headless CMS", "Multi-merchant", "Role Based Access", "Encryption", "QR Code"],
+        "technologies": ["Mobile App Development", "RESTful API Development", "Headless CMS", "Multi-tenant architecture", "Role Based Access", "Encryption", "QR Code", "Payment Gateway Integration"],
         "link": "https://www.facebook.com/profile.php?id=61581131526732",
         "image": "assets/images/project1-screenshot.png"
     },
     {
         "name":"2-4-MAKET",
         "description": "Vending machine integration with OdiL QR Payment",
-        "technologies": ["Mobile App Development", "API Integration", "Headless CMS", "IoT Integration", "QR Code", "Payment Gateway"],
+        "technologies": ["Mobile App Development", "RESTful API Development & Integration", "Headless CMS", "IoT Integration", "QR Code"],
         "link": "#",
         "image": "assets/images/project2-screenshot.png"
     }
