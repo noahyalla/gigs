@@ -22,8 +22,8 @@
     },
     {
         "name":"Urban Drift",
-        "description": "A firebase web app for car rental management integrated with BSP Pay",
-        "technologies": ["Google Firebase", "Javascript", "HTML", "CSS"],
+        "description": "A firebase eCommerce web app for car rental management integrated with BSP Pay",
+        "technologies": ["Google Firebase", "Javascript", "HTML", "CSS", "eCommerce"],
         "link": "https://urban-drift-png.web.app/",
         "image": "assets/images/project4-screenshot.png"
     }
