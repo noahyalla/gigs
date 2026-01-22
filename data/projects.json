@@ -19,5 +19,12 @@
         "technologies": ["Google Firebase", "Javascript", "HTML", "CSS"],
         "link": "https://the-daily-peel.web.app/",
         "image": "assets/images/project3-screenshot.png"
+    },
+    {
+        "name":"Urban Drift",
+        "description": "A firebase web app for car rental management integrated with BSP Pay",
+        "technologies": ["Google Firebase", "Javascript", "HTML", "CSS"],
+        "link": "https://urban-drift-png.web.app/",
+        "image": "assets/images/project4-screenshot.png"
     }
 ]
